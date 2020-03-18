@@ -32,14 +32,15 @@ function test() {
 
 }
 
+// вставляю после списка значения
 function randomInfo() {
-  let div = document.createElement('div');
-  div.className = "alert";
-  div.innerHTML = "<strong>Всем привет!</strong>." + getRandomNumber(255);
-  document.body.append(div);
+  document.getElementById("spanRandom").innerHTML = getRandomNumber(100);
+  document.getElementById("spanRandom2").innerHTML = getRandomNumber(100);
+  document.getElementById("spanRandom3").innerHTML = getRandomNumber(100);
 
 }
 
+// получить рандомное значение не больше указанного числа
 function getRandomNumber(max) {
   return Math.floor(Math.random() * Math.floor(max));
 }
